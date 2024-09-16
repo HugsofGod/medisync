@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import './header.css';
 import Image1 from '../../assets/image1.png'
 
@@ -6,10 +7,10 @@ const Header = () => {
   return (
     <div className="medisync__header" >
         <div className="medisync__header-content">
-          <h1>Take your practice to the next level.</h1>
-          <p>Medisync simplifies healthcare by combining data collection, processing, and reporting to enhance healthcare delivery at all levels.</p>
+          <h1>Take your Medical record to the next level with Web3 Technology.</h1>
+          <p>Medisync simplifies healthcare by  collecting data , processing it and saving on the blockchain</p>
           <div className="medisync__header-content__demo">
-            <button type='button'>Request for Demo</button>
+          <Link to="/demo"><button type='button'>Request for Demo</button></Link>
           </div>
         </div>
 

@@ -10,36 +10,37 @@ const Whyus = () => {
     <div className="medisync__whyus">
       <h1>Why Choose Our Platform?</h1>
       <p>
-        View your medical information on our secure patient portal, empowering you to actively engage in your healthcare decisions.
+        View and save your medical information on our secured portal, 
+        empowering you to actively engage in your healthcare decisions.
       </p>
-      <div className="medisync__whyus-tab">
-          <div className="medisync__whyus-right_tab">
-            <div className="medisync__whyus-right_tab-image">
+      <div className="medisync__whyus-tabs">
+          <div className="medisync__whyus-tabs_tab">
+            <div className="medisync__whyus-tabs_tab-image">
               <img src={Doc1} alt="Doc" />
             </div>
-            <h1>We also Offer Consultation Service</h1>
+            <h1>Autonomous control of Record</h1>
             <p>
-              Our Qualified and experinced doctors are always ready to attend to you. Make an appointment with them
+              User has full access over record and authorizes all that happens on it
             </p>
           </div>
 
-          <div className="medisync__whyus-right_tab">
-            <div className="medisync__whyus-right_tab-image">
+          <div className="medisync__whyus-tabs_tab">
+            <div className="medisync__whyus-tabs_tab-image">
               <img src={Doc2} alt="Doc" />
             </div>
-            <h1>Qualified Doctors</h1>
+            <h1>Encrypted  records</h1>
             <p>
-            Our Qualified and experinced doctors are always ready to attend to you. Make an appointment with them
+              Records stored on the block chain cant be tamperd with or hacked
             </p>
           </div>
 
-          <div className="medisync__whyus-right_tab">
-            <div className="medisync__whyus-right_tab-image">
+          <div className="medisync__whyus-tabs_tab">
+            <div className="medisync__whyus-tabs_tab-image">
               <img src={Doc3} alt="Doc" />
             </div>
-            <h1>24Hour Services</h1>
+            <h1>Access limit control</h1>
             <p>
-            Whenever you are having any Challenges you can reach out to our support system, on how we can support you.
+              User adds,removes and grants access to authorised wallets on the record
             </p>
           </div>
       </div>

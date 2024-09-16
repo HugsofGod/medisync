@@ -1,12 +1,3 @@
-body {
-    background: #f6f6f6;
-}
-
-a {
-    color: unset;
-    text-decoration: none;
-}
-
 .medisync__benefits {
     justify-content: center;
     align-items: center;
@@ -14,24 +5,24 @@ a {
 }
 
 .medisync__benefits h1 {
-    font-weight: 600;
-    font-size: 50px;
-    line-height: 52px;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 62px;
     text-align: center;
     letter-spacing: -0.02em;
     color: #1B1A1A;
-    max-width: 716px;  
+    max-width: 600px;  
     margin: 0 auto;
-    padding: 120px 0 18px 0;
+    padding: 50px 0 6px 0;
 }
 
 .medisync__benefits p {
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 32px;
     text-align: center;
     color: #656462;
-    max-width: 946px;
+    max-width: 700px;
     margin: 0 auto;
     padding-bottom: 60px;
 }
@@ -39,6 +30,7 @@ a {
 .medisync__benefits-tabs {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     padding: 20px;
 }
@@ -52,7 +44,8 @@ a {
     height: 264px;
     background: #FFFFFF;
     border-radius: 10px;
-    margin: 20px auto;
+    margin: 0 auto;
+    padding: 2px 2px;
 }
 
 .medisync__benefits-tabs_tab-icons img {
@@ -73,7 +66,7 @@ a {
     border-radius: 20px;
     padding: 0.1rem 2.5rem;
 
-    font-weight: 700;
+    font-weight: 500;
     font-size: 18px;
     line-height: 28px;
     color: #500680;
@@ -91,8 +84,7 @@ a {
     }
 
     .medisync__benefits-tabs_tab {
-        width: 300px;
-        height: 264px;
+        margin: 10px 10px;
     }
 }
 
@@ -107,12 +99,13 @@ a {
     }
 
     .medisync__benefits-tabs_tab {
-        width: 400px;
-        height: 264px;
     }
 }
 
 @media screen and (max-width: 490px) {
+    .medisync__benefits{
+        padding: 0 0;
+    }
     .medisync__benefits h1 {
         padding: 0 0.5rem;
         font-size: 30px;
@@ -122,5 +115,17 @@ a {
     .medisync__benefits p {
         padding: 1rem 1.6rem;
         font-size: 18px;
+    }
+
+    .medisync__benefits-tabs_tab {
+        width: 100%;
+    }
+
+    .medisync__benefits-tabs_tab p {
+        font-size: 16px;
+    }
+
+    .medisync__benefits-tabs_tab button {
+        font-size: 16px;
     }
 }

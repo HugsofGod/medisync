@@ -3,13 +3,14 @@ import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import logo from '../../assets/logo.png';
 import './navbar.css';
 import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Menu = () => (
   <>
-  <p><Link to="/Home">Home</Link></p>
-  <p><Link to="/Doctors">About</Link></p>
-  <p><Link to="/about">Home</Link></p>
-  <p><Link to="/services">Home</Link></p>
+  <p><NavLink exact to="/" activeClassName="active">Home</NavLink></p>
+  <p><NavLink to="/about"  activeClassName="active">About</NavLink></p>
+  <p><NavLink to="/demo"  activeClassName="active">Demo</NavLink></p>
+  <p><NavLink to="/services"  activeClassName="active">Services</NavLink></p>
   </>
 )
 
@@ -28,7 +29,7 @@ const [toggleMenu, setToggleMenu] = useState(false);
         </div>
 
         <div className="medisync__navbar-right">
-          <button type="button">Get Started</button>
+          <Link to="/welcome"><button type="button">Get Started</button></Link>
         </div>
       </div>
       <div className="medisync__navbar-menu">
@@ -41,7 +42,7 @@ const [toggleMenu, setToggleMenu] = useState(false);
             <div className="medisync__navbar-menu_container-links">
               <Menu />
               <div className="medisync__navbar-menu_container-links-wallet">
-                <button type="button">Get Started</button>
+                <Link to="/welcome"><button type="button">Get Started</button></Link>
               </div>
             </div>
           </div>

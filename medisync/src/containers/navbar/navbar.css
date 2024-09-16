@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 13px 70px;
+    padding: 13px 40px;
     background: #f6f6f6;
     font-family: var(--font-family);
     
@@ -26,7 +26,7 @@
     position: relative;
     width: 118.87px;
     height: 28.07px;
-    padding-right: 180px;
+    padding-right: 100px;
 }
 
 .medisync__navbar-links {
@@ -37,14 +37,15 @@
 .medisync__navbar-links p {
     color: #1B1A1A;
     font-family: var(--font-family);
-    font-weight: 700;
-    font-size: 18px;
+    font-weight: 400;
+    font-size: 16px;
     line-height: 28px;
     padding-left: 56px;
     cursor: pointer;
 }
 
 .medisync__navbar-menu_container p {
+    width: 150px;
     color: #1B1A1A;
     font-family: var(--font-family);
     font-weight: 400;
@@ -55,6 +56,14 @@
     cursor: pointer;
 }
 
+.medisync__navbar-links p:hover,
+.medisync__navbar-menu_container p:hover {
+    color: #460570;
+    font-weight: 700;
+    transition: 2s;
+    transform-style: flats;
+}
+
 .medisync__navbar-right button,
 .medisync__navbar-menu_container-links-wallet button {
     padding: 10px 55px;
@@ -62,13 +71,21 @@
     font-family: var(--font-family);
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 32px;
     background: #460570;
     border-radius: 8px;
     border: none;
     outline: none;
     cursor: pointer;
+}
+
+.medisync__navbar-right button:hover,
+.medisync__navbar-menu_container-links-wallet button:hover {
+    color: #460570;
+    background: #cecece;
+    box-shadow: 0 0 2px #1B1A1A;
+    transition: 1s;
 }
 
 .medisync__navbar-menu {
@@ -88,7 +105,7 @@
 
     text-align: end;
     background: #fff;
-    padding: 2rem;
+    padding: 10px;
     position: absolute;
     top: 100px;
     right: 0;
@@ -98,7 +115,7 @@
 }
 
 .medisync__navbar-menu_container-links button {
-    padding: 7px 10px;
+    padding: 7px 15px;
     font-size: 15px;
 }
 
@@ -108,6 +125,11 @@
 
 .medisync__navbar-menu_container-links-wallet {
     display: none;
+}
+
+.active {
+    color: #530885;
+    font-weight: 700;
 }
 
 @media screen and (max-width: 1050px) {
@@ -120,15 +142,9 @@
     }
 }
 
-@media screen and (max-width: 850px) {
-    .medisync__navbar {
-        padding: 2rem 1rem;
-    }
-}
-
 @media screen and (max-width: 650px) {
     .medisync__navbar {
-        padding: 2rem;
+        padding: 20px 10px;
     }
 
     .medisync__navbar-right {
